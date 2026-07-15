@@ -66,7 +66,7 @@ def write_meta(records, csv_path, generated=None):
         "time_range": {"min": times[0] if times else None,
                        "max": times[-1] if times else None},
         "by_author": dict(sorted(by_author.items())),
-        "source": "https://github.com/acarrerac/funvisis_catalog_2",
+        "source": "https://github.com/acarrerac/funvisis-catalog",
     }
     with open(meta_path(csv_path), "w", encoding="utf-8") as f:
         json.dump(meta, f, indent=2)
